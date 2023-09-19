@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="SmartPal GPT 4">
+
+    <script>
+    // Wrap the code inside a function
+    function deleteCookiesAfterLoad() {
+      function deleteAllCookies() {
+        var cookies = document.cookie.split(";");
+
+        for (var i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i];
+          var eqPos = cookie.indexOf("=");
+          var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+
+          // Set expiration date to 24 hours from now
+          var expirationDate = new Date();
+          expirationDate.setTime(expirationDate.getTime() - (24 * 60 * 60 * 1000));
+          var expires = "expires=" + expirationDate.toUTCString();
+
+          document.cookie = name + "=; " + expires + "; path=/;";
+        }
+      }
+
+      // Call the function to delete all existing cookies
+      deleteAllCookies();
+    }
+
+    // Call the function after the page has finished loading
+    window.addEventListener("load", deleteCookiesAfterLoad);
+  </script>
+
+
+  
+
+  <!-- Favicon -->
+  <link rel="icon" href="Untitled_design_(1).png" sizes="any"/>
+  
+
+  <!-- Open Graph & SEO tags -->
+  <meta property="og:title" content="Smartpal ChatGPT" />
+  <meta property="og:description" content="A showcase of what you can accomplish with Ai within smartpal in a matter of a few clicks." />
+  <meta property="og:image" content="/assets/assets/images/SmartPal_(1).png" /> 
+  <meta name="twitter:title" content="Smartpal ChatGPT" />
+  <meta name="twitter:description" content="A showcase of what you can accomplish with Ai within smartpal in a matter of a few clicks." />
+  <meta name="twitter:image" content="/assets/assets/images/SmartPal_(1).png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title> Smartpal ChatGPT </title>
+  <meta name="description" content="A showcase of what you can accomplish with Ai within smartpal in a matter of a few clicks." />
+    
+
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+    
+  </script>
+  
+  
+  
+  
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>

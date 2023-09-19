@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "605278461285",
+    "project_id": "smartpal-4b633",
+    "storage_bucket": "smartpal-4b633.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605278461285:android:2771a8c1e5d55526de158c",
+        "android_client_info": {
+          "package_name": "com.company.flutterai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605278461285-f0tmf3i4er6eck8bn2judri3gjetu5tc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACxYzD2RMGYfPMLMQv6X-IDvUokA5-DWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605278461285-5vkqp3vsn14hmsgkp9k0vqddp8b9fd0b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "605278461285-01sohhjods5litsjkjnajf5v5eu7omjj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.company.flutterai"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
